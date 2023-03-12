@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#00C9C8;
+  background-color: #00C9C8;
   border-bottom: 0.1rem solid rgb(72, 97, 72);
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
@@ -31,26 +31,26 @@ body {
   transition: background .3s ease-out;
 }
 
-.label-text{
+.label-text {
   font-size: 1.3rem;
 }
 
-.arrow{
+.arrow {
   width: 15px;
   display: none;
   transition: transform .3s ease-in-out;
 }
 
-.bayan-input:checked ~ .bayan-label,
-.bayan-item:hover  .bayan-label{
-  background-color :#47817F;
+.bayan-input:checked~.bayan-label,
+.bayan-item:hover .bayan-label {
+  background-color: #47817F;
   color: #fff;
 }
 
 .bayan-img {
- width: 0;
- height: 0;
- transition: all .3s ease-in-out;
+  width: 0;
+  height: 0;
+  transition: all .3s ease-in-out;
 }
 
 
@@ -60,23 +60,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .bayan-inner:hover .bayan-img,
-.bayan-input:checked ~.bayan-inner .bayan-img,
-.bayan-label:hover ~.bayan-inner .bayan-img{
-  height: 75%;
-  width: 75%;
+.bayan-input:checked~.bayan-inner .bayan-img,
+.bayan-label:hover~.bayan-inner .bayan-img {
+  height: 100%;
+  width: 100%;
 }
 
 
 .bayan-item:hover .arrow,
-.bayan-input:checked ~ .bayan-label .arrow{
+.bayan-input:checked~.bayan-label .arrow {
   transform: rotate(180deg);
 }
 
-@media (min-width: 820px){
+@media (min-width: 820px) {
 
   .wrapper {
     max-width: 40%;
@@ -85,31 +85,48 @@ body {
   .title {
     font-size: 3rem;
   }
-  .label-text{
+
+  .label-text {
     font-size: 1.2rem;
   }
-    
-  .wrapper:hover .arrow{
+
+  .wrapper:hover .arrow {
     display: block;
   }
 
-  .bayan-label{
+  .bayan-label {
     cursor: pointer;
   }
 
-  .bayan-inner{
+  .bayan-inner {
     cursor: pointer;
   }
+
+  .bayan-inner:hover .bayan-img,
+  .bayan-input:checked~.bayan-inner .bayan-img,
+  .bayan-label:hover~.bayan-inner .bayan-img {
+    height: 70%;
+    width: 70%;
+  }
+
 }
 
 @media (min-width: 1218px) {
+  .bayan-inner:hover .bayan-img,
+  .bayan-input:checked~.bayan-inner .bayan-img,
+  .bayan-label:hover~.bayan-inner .bayan-img {
+    height: 45%;
+    width: 45%;
+  }
+
   .title {
     font-size: 3.4rem;
   }
 
-  .bayan-item{
+  .bayan-item {
     cursor: pointer;
   }
+
   .wrapper {
     max-width: 40%;
   }
